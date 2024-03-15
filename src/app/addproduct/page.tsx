@@ -3,7 +3,8 @@ import { getServerSession } from "next-auth";
 
 import { prisma } from "@/lib/db/prisma";
 import { redirect } from "next/navigation";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+// import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/utils/authOptions";
 
 export const metadata = {
   title: "Add Product - Flowmazon",
